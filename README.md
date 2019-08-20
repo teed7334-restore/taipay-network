@@ -28,6 +28,7 @@ npm install -g composer-playground
 curl -O https://raw.githubusercontent.com/hyperledger/composer-tools/master/packages/fabric-dev-servers/fabric-dev-servers.tar.gz
 tar -xvf fabric-dev-servers.tar.gz
 cd ~/fabric-dev-servers
+export FABRIC_VERSION=hlfv12
 ./downloadFabric.sh
 ```
 
@@ -77,3 +78,8 @@ composer-rest-server
 
 1. 將[網路管理員帳號]@taipay-network做為匯入卡
 2. 其他設定通通預設就好，預設它會用大寫顯示，好比(Y/n)
+
+## 參考資料
+
+1. 精通Hyperledger [https://my.oschina.net/mdxlcj?tab=newest&catalogId=5781429](https://my.oschina.net/mdxlcj?tab=newest&catalogId=5781429)
+2. Hyperledger Composer Tutorials [https://hyperledger.github.io/composer/latest/tutorials/tutorials.html](https://hyperledger.github.io/composer/latest/tutorials/tutorials.html)
