@@ -19,24 +19,18 @@
 namespace com.taipay.network
 
 //定義資產
-asset Punchclock identified by punchclockId {
-    o String punchclockId
-    o String punchTime
-    o String doorNo
-    o String cardNo
-    o String identify
-    --> Voter owner
+asset Punchclock identified by id {
+    o String id
+    o String onWorkDate
+    o String onWorkTime
+    o String offWorkTime
+    o String workTimes
+    --> Employee employee
 }
 
 //定義參與者
-participant Voter identified by voteId {
-    o String voteId
+participant Employee identified by identify {
+    o String identify
     o String firstName
     o String lastName
-}
-
-//定義交易
-transaction Vote {
-    --> Punchclock punchclock
-    --> Voter newVoter
 }
